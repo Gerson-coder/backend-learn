@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roadmap Backend con Python</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <div class="hero-content">
+          <span class="eyebrow">Backend Junior Roadmap · Python + FastAPI</span>
+          <h1>Ruta completa para tu primer empleo backend</h1>
+          <p>
+            Un mapa por niveles para pasar de fundamentos de Python a una API
+            profesional con PostgreSQL, autenticación, autorización, testing
+            real, Docker, deploy y documentación de portfolio.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#roadmap">Ver roadmap</a>
+            <a class="button secondary" href="#proyecto-final"
+              >Proyecto final</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <section class="stats" aria-label="Resumen del roadmap">
+        <article class="stat">
+          <strong>12</strong>
+          <span>niveles progresivos</span>
+        </article>
+        <article class="stat">
+          <strong>Core</strong>
+          <span>Python, HTTP, SQL, FastAPI</span>
+        </article>
+        <article class="stat">
+          <strong>Real</strong>
+          <span>auth, permisos, tests, deploy</span>
+        </article>
+        <article class="stat">
+          <strong>Portfolio</strong>
+          <span>API de tickets técnicos</span>
+        </article>
+      </section>
+
+      <div class="layout">
+        <aside class="sidebar">
+          <section class="panel">
+            <h2>Índice</h2>
+            <ul class="nav-list">
+              <li>
+                <a href="#nivel-1">Nivel 1 <span>Python</span></a>
+              </li>
+              <li>
+                <a href="#nivel-2">Nivel 2 <span>Datos</span></a>
+              </li>
+              <li>
+                <a href="#nivel-3">Nivel 3 <span>Herramientas</span></a>
+              </li>
+              <li>
+                <a href="#nivel-4">Nivel 4 <span>Async</span></a>
+              </li>
+              <li>
+                <a href="#nivel-5">Nivel 5 <span>HTTP/API</span></a>
+              </li>
+              <li>
+                <a href="#nivel-6">Nivel 6 <span>Testing</span></a>
+              </li>
+              <li>
+                <a href="#nivel-7">Nivel 7 <span>DB</span></a>
+              </li>
+              <li>
+                <a href="#nivel-8">Nivel 8 <span>Auth</span></a>
+              </li>
+              <li>
+                <a href="#nivel-9">Nivel 9 <span>Arquitectura</span></a>
+              </li>
+              <li>
+                <a href="#nivel-10">Nivel 10 <span>Producción</span></a>
+              </li>
+              <li>
+                <a href="#nivel-11">Nivel 11 <span>Extras</span></a>
+              </li>
+              <li>
+                <a href="#proyecto-final">Final <span>Portfolio</span></a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="panel">
+            <h2>Progreso</h2>
+            <p class="progress-label" data-progress-text>
+              0/0 módulos completados · 0%
+            </p>
+            <div class="progress-track" aria-hidden="true">
+              <div class="progress-bar" data-progress-bar></div>
+            </div>
+            <button class="small-button" type="button" data-reset>
+              Reiniciar progreso
+            </button>
+          </section>
+
+          <section class="panel">
+            <h2>Buscar tema</h2>
+            <input
+              class="search-input"
+              type="search"
+              placeholder="Ej: lambda, JWT, Docker"
+              data-search
+            />
+          </section>
+
+          <section class="panel">
+            <h2>Prioridad</h2>
+            <div class="legend">
+              <p><span class="dot green"></span>Core para empleo junior</p>
+              <p><span class="dot"></span>Backend web real</p>
+              <p><span class="dot purple"></span>Producción y calidad</p>
+              <p><span class="dot yellow"></span>Extra para destacar</p>
+            </div>
+          </section>
+        </aside>
+
+        <section class="content" id="roadmap">
+          <div class="section-title">
+            <h2>Roadmap por niveles</h2>
+            <p>
+              No lo estudies como una lista infinita: avanzá nivel por nivel y
+              cerrá cada bloque con ejercicios o mini APIs.
+            </p>
+          </div>
+
+          <article class="level" id="nivel-1" style="--accent: var(--green)">
+            <div class="level-header">
+              <div>
+                <h3>Fundamentos de Python</h3>
+                <p class="goal">
+                  Aprender a resolver problemas simples y escribir funciones
+                  claras.
+                </p>
+              </div>
+              <span class="badge">Nivel 1</span>
+            </div>
+            <div class="modules">
+              <div class="module">
+                <h4>Sintaxis básica</h4>
+                <ul>
+                  <li>Variables y tipos</li>
+                  <li>Input/output</li>
+                  <li>Operadores</li>
+                  <li>F-strings</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Control de flujo</h4>
+                <ul>
+                  <li>if / elif / else</li>
+                  <li>Operadores lógicos</li>
+                  <li>for y while</li>
+                  <li>Validaciones simples</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Funciones</h4>
+                <ul>
+                  <li>Parámetros</li>
+                  <li>return</li>
+                  <li>Funciones puras</li>
+                  <li>Separar lógica de input/print</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Estructura profesional</h4>
+                <ul>
+                  <li>main()</li>
+                  <li>if __name__ == "__main__"</li>
+                  <li>Imports básicos</li>
+                  <li>PEP 8 inicial</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="level" id="nivel-2" style="--accent: var(--green)">
+            <div class="level-header">
+              <div>
+                <h3>Estructuras de datos y código reusable</h3>
+                <p class="goal">
+                  Representar información como lo hace una aplicación real.
+                </p>
+              </div>
+              <span class="badge">Nivel 2</span>
+            </div>
+            <div class="modules">
+              <div class="module">
+                <h4>Colecciones</h4>
+                <ul>
+                  <li>Listas</li>
+                  <li>Diccionarios</li>
+                  <li>Tuplas</li>
+                  <li>Sets</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Módulos y paquetes</h4>
+                <ul>
+                  <li>Imports</li>
+                  <li>Separar archivos</li>
+                  <li>Responsabilidades</li>
+                  <li>Reutilización</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Errores y archivos</h4>
+                <ul>
+                  <li>try/except</li>
+                  <li>Excepciones específicas</li>
+                  <li>Archivos</li>
+                  <li>JSON básico</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Typing básico</h4>
+                <ul>
+                  <li>str, int, bool</li>
+                  <li>list y dict</li>
+                  <li>Optional</li>
+                  <li>Firmas de funciones</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Funciones útiles</h4>
+                <ul>
+                  <li>lambda</li>
+                  <li>sorted(key=...)</li>
+                  <li>map y filter</li>
+                  <li>List comprehensions</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="level" id="nivel-3" style="--accent: var(--green)">
+            <div class="level-header">
+              <div>
+                <h3>Herramientas profesionales</h3>
+                <p class="goal">
+                  Preparar tu entorno como desarrollador y empezar a trabajar
+                  con disciplina.
+                </p>
+              </div>
+              <span class="badge">Nivel 3</span>
+            </div>
+            <div class="modules">
+              <div class="module">
+                <h4>Entorno Python</h4>
+                <ul>
+                  <li>venv</li>
+                  <li>pip</li>
+                  <li>requirements.txt</li>
+                  <li>Variables de entorno</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Git y GitHub</h4>
+                <ul>
+                  <li>Commits</li>
+                  <li>Branches</li>
+                  <li>Pull requests</li>
+                  <li>.gitignore</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Terminal y Linux básico</h4>
+                <ul>
+                  <li>cd, ls, cat</li>
+                  <li>grep, tail -f</li>
+                  <li>chmod</li>
+                  <li>ssh y curl</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>pytest inicial</h4>
+                <ul>
+                  <li>Tests unitarios</li>
+                  <li>Assertions</li>
+                  <li>Fixtures básicas</li>
+                  <li>Testear funciones puras</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="level" id="nivel-4" style="--accent: var(--blue)">
+            <div class="level-header">
+              <div>
+                <h3>Async/Await en Python</h3>
+                <p class="goal">
+                  Entender el modelo que usa FastAPI para evitar bugs raros y
+                  código bloqueante.
+                </p>
+              </div>
+              <span class="badge">Nivel 4</span>
+            </div>
+            <div class="modules">
+              <div class="module">
+                <h4>Modelo mental</h4>
+                <ul>
+                  <li>async def vs def</li>
+                  <li>await</li>
+                  <li>Event loop</li>
+                  <li>Concurrencia vs paralelismo</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Uso práctico</h4>
+                <ul>
+                  <li>asyncio básico</li>
+                  <li>Tareas concurrentes</li>
+                  <li>I/O no bloqueante</li>
+                  <li>Errores comunes</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>FastAPI readiness</h4>
+                <ul>
+                  <li>Cuándo usar async</li>
+                  <li>Cuándo usar sync</li>
+                  <li>Código bloqueante</li>
+                  <li>Debug de endpoints async</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="level" id="nivel-5" style="--accent: var(--blue)">
+            <div class="level-header">
+              <div>
+                <h3>HTTP, REST y FastAPI</h3>
+                <p class="goal">
+                  Crear APIs entendiendo antes cómo funciona la web.
+                </p>
+              </div>
+              <span class="badge">Nivel 5</span>
+            </div>
+            <div class="modules">
+              <div class="module">
+                <h4>HTTP</h4>
+                <ul>
+                  <li>Request y response</li>
+                  <li>Headers</li>
+                  <li>Status codes</li>
+                  <li>JSON</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>REST profesional</h4>
+                <ul>
+                  <li>GET, POST, PUT, PATCH, DELETE</li>
+                  <li>/api/v1</li>
+                  <li>Respuestas consistentes</li>
+                  <li>Errores estándar</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>FastAPI básico</h4>
+                <ul>
+                  <li>Endpoints</li>
+                  <li>Path/query params</li>
+                  <li>Body</li>
+                  <li>OpenAPI / Swagger</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Pydantic</h4>
+                <ul>
+                  <li>Schemas</li>
+                  <li>Validación</li>
+                  <li>Serialización</li>
+                  <li>Mensajes de error</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="level" id="nivel-6" style="--accent: var(--purple)">
+            <div class="level-header">
+              <div>
+                <h3>Testing de APIs reales</h3>
+                <p class="goal">
+                  Probar endpoints, autenticación, permisos y base de datos de
+                  test.
+                </p>
+              </div>
+              <span class="badge">Nivel 6</span>
+            </div>
+            <div class="modules">
+              <div class="module">
+                <h4>TestClient y httpx</h4>
+                <ul>
+                  <li>Tests de endpoints</li>
+                  <li>Requests reales</li>
+                  <li>Status codes</li>
+                  <li>Response JSON</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>pytest-asyncio</h4>
+                <ul>
+                  <li>Tests async</li>
+                  <li>Fixtures async</li>
+                  <li>Setup/teardown</li>
+                  <li>Clientes async</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Casos backend</h4>
+                <ul>
+                  <li>Login</li>
+                  <li>Permisos 401/403</li>
+                  <li>Errores 400/404/500</li>
+                  <li>DB de test</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="level" id="nivel-7" style="--accent: var(--blue)">
+            <div class="level-header">
+              <div>
+                <h3>Bases de datos</h3>
+                <p class="goal">
+                  Guardar información con relaciones, migraciones y consultas
+                  mantenibles.
+                </p>
+              </div>
+              <span class="badge">Nivel 7</span>
+            </div>
+            <div class="modules">
+              <div class="module">
+                <h4>SQL</h4>
+                <ul>
+                  <li>SELECT, INSERT, UPDATE, DELETE</li>
+                  <li>WHERE y JOIN</li>
+                  <li>Relaciones</li>
+                  <li>Foreign keys</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>PostgreSQL</h4>
+                <ul>
+                  <li>Constraints</li>
+                  <li>Índices</li>
+                  <li>Transacciones</li>
+                  <li>created_at / updated_at</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>SQLAlchemy sync</h4>
+                <ul>
+                  <li>Modelos</li>
+                  <li>Sesiones</li>
+                  <li>Relaciones</li>
+                  <li>Problema N+1</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Alembic + async</h4>
+                <ul>
+                  <li>Migraciones</li>
+                  <li>AsyncSession</li>
+                  <li>asyncpg</li>
+                  <li>DB sessions en FastAPI</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="level" id="nivel-8" style="--accent: var(--blue)">
+            <div class="level-header">
+              <div>
+                <h3>Autenticación, autorización y seguridad</h3>
+                <p class="goal">
+                  Proteger usuarios, sesiones y recursos privados.
+                </p>
+              </div>
+              <span class="badge">Nivel 8</span>
+            </div>
+            <div class="modules">
+              <div class="module">
+                <h4>Autenticación</h4>
+                <ul>
+                  <li>Register/login</li>
+                  <li>bcrypt</li>
+                  <li>JWT access token</li>
+                  <li>Refresh token</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Cookies seguras</h4>
+                <ul>
+                  <li>HttpOnly</li>
+                  <li>Secure</li>
+                  <li>SameSite</li>
+                  <li>Logout seguro</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Autorización</h4>
+                <ul>
+                  <li>Roles</li>
+                  <li>Permisos</li>
+                  <li>Admin/usuario/operador</li>
+                  <li>Protección de endpoints</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Seguridad web</h4>
+                <ul>
+                  <li>CORS</li>
+                  <li>CSRF</li>
+                  <li>SQL injection</li>
+                  <li>Rate limiting</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="level" id="nivel-9" style="--accent: var(--purple)">
+            <div class="level-header">
+              <div>
+                <h3>Arquitectura backend</h3>
+                <p class="goal">
+                  Organizar una API para que pueda crecer sin volverse
+                  inmantenible.
+                </p>
+              </div>
+              <span class="badge">Nivel 9</span>
+            </div>
+            <div class="modules">
+              <div class="module">
+                <h4>Capas</h4>
+                <ul>
+                  <li>Routes</li>
+                  <li>Services</li>
+                  <li>Repositories</li>
+                  <li>Schemas</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Patrones backend</h4>
+                <ul>
+                  <li>Service Layer</li>
+                  <li>Repository Pattern</li>
+                  <li>Dependency Injection</li>
+                  <li>DTO / Schemas</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Features reales</h4>
+                <ul>
+                  <li>Pagination</li>
+                  <li>Filtering</li>
+                  <li>Search</li>
+                  <li>File uploads</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Documentación técnica</h4>
+                <ul>
+                  <li>README profesional</li>
+                  <li>.env.example</li>
+                  <li>Ejemplos de endpoints</li>
+                  <li>Diagrama simple</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Patrones de diseño</h4>
+                <ul>
+                  <li>Factory básico</li>
+                  <li>Strategy básico</li>
+                  <li>Adapter básico</li>
+                  <li>Unit of Work más adelante</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="level" id="nivel-10" style="--accent: var(--purple)">
+            <div class="level-header">
+              <div>
+                <h3>Producción, Docker y deploy</h3>
+                <p class="goal">
+                  Publicar una API y saber operarla mínimamente.
+                </p>
+              </div>
+              <span class="badge">Nivel 10</span>
+            </div>
+            <div class="modules">
+              <div class="module">
+                <h4>Docker</h4>
+                <ul>
+                  <li>Dockerfile</li>
+                  <li>Docker Compose</li>
+                  <li>Servicios</li>
+                  <li>Variables por ambiente</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Runtime</h4>
+                <ul>
+                  <li>Uvicorn/Gunicorn</li>
+                  <li>Nginx básico</li>
+                  <li>Health checks</li>
+                  <li>Logs</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Deploy</h4>
+                <ul>
+                  <li>Render/Railway/Fly.io</li>
+                  <li>CI/CD básico</li>
+                  <li>GitHub Actions</li>
+                  <li>Manejo de errores en prod</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Operación básica</h4>
+                <ul>
+                  <li>Backups DB</li>
+                  <li>Secrets</li>
+                  <li>Monitoreo básico</li>
+                  <li>Sentry opcional</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="level" id="nivel-11" style="--accent: var(--yellow)">
+            <div class="level-header">
+              <div>
+                <h3>Extras para destacar</h3>
+                <p class="goal">
+                  No son lo primero, pero te diferencian cuando el core ya está
+                  sólido.
+                </p>
+              </div>
+              <span class="badge">Nivel 11</span>
+            </div>
+            <div class="modules">
+              <div class="module">
+                <h4>Redis y cache</h4>
+                <ul>
+                  <li>Cache de consultas</li>
+                  <li>Expiración</li>
+                  <li>Invalidación simple</li>
+                  <li>Rate limiting</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Background jobs</h4>
+                <ul>
+                  <li>Celery o RQ</li>
+                  <li>Redis como broker</li>
+                  <li>Emails</li>
+                  <li>Tareas programadas</li>
+                </ul>
+              </div>
+              <div class="module">
+                <h4>Integraciones</h4>
+                <ul>
+                  <li>Webhooks</li>
+                  <li>Emails transaccionales</li>
+                  <li>Procesamiento de archivos</li>
+                  <li>APIs externas</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <section class="callout" id="proyecto-final">
+            <h2>
+              Proyecto final recomendado: API de gestión de tickets técnicos
+            </h2>
+            <p>
+              Es mejor que un CRUD genérico porque se parece a un sistema real
+              de empresa y te permite demostrar auth, permisos, filtros,
+              comentarios, testing, arquitectura, base de datos y deploy.
+            </p>
+            <div class="project-grid">
+              <article class="project-card">
+                <h3>Core funcional</h3>
+                <ul>
+                  <li>Usuarios</li>
+                  <li>Login</li>
+                  <li>Tickets</li>
+                  <li>Comentarios</li>
+                  <li>Estados y prioridades</li>
+                </ul>
+              </article>
+              <article class="project-card">
+                <h3>Backend serio</h3>
+                <ul>
+                  <li>PostgreSQL</li>
+                  <li>SQLAlchemy</li>
+                  <li>Alembic</li>
+                  <li>JWT en cookies</li>
+                  <li>Roles y permisos</li>
+                </ul>
+              </article>
+              <article class="project-card">
+                <h3>Portfolio</h3>
+                <ul>
+                  <li>Tests de endpoints</li>
+                  <li>Docker</li>
+                  <li>Deploy</li>
+                  <li>README profesional</li>
+                  <li>Swagger público</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+        </section>
+      </div>
+
+      <footer>
+        <p>
+          Regla de oro: no completes temas en abstracto. Convertí cada bloque en
+          código, tests y una feature explicable.
+        </p>
+      </footer>
+    </main>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
